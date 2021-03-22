@@ -17,16 +17,13 @@
   padding: 2rem 0 3rem 0;
   background: $ligthgrey;
   h1 {
-    margin: 1rem;
+    padding: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
   }
   p {
-    margin: 2rem 1rem;
+    padding: 2rem 1rem;
     font-weight: 300;
-  }
-  a {
-    @include box-shadow;
   }
 }
 
@@ -54,7 +51,7 @@
     li::before {
       content: counter(li);
       padding: 4px 8px 4px 8px;
-      margin: 2rem 1rem;
+      margin-right: 1rem;
       color: white;
       background: $purple;
       border: 1px solid $purple;
@@ -76,6 +73,7 @@
     & > a {
       figure {
         flex-basis: 100%;
+        width: 100%;
         img {
           width: 100%;
           max-height: 225px;
