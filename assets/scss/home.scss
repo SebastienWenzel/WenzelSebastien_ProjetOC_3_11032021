@@ -35,6 +35,7 @@
     font-weight: bold;
     li {
       @include box-shadow;
+      background: $ligthgrey;
       margin: 1rem 1rem;
       padding: 1.5rem 0rem;
       border-radius: 1.25rem;
@@ -115,6 +116,12 @@
     }
   }
 }
+@media only screen and (min-width: 760px) {
+  #operation,
+  #restaurant > div {
+    padding: 2em 4em;
+  }
+}
 @media only screen and (min-width: 992px) {
   #operation ol {
     display: flex;
@@ -126,7 +133,7 @@
     padding-right: 1rem;
   }
 
-  #restaurant {
+  #restaurant > div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -135,7 +142,24 @@
       flex-basis: 100%;
     }
     article {
-      flex-basis: 45%;
+      flex-basis: 49%;
+      margin-bottom: 6px;
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #operation,
+  #restaurant > div {
+    max-width: 1240px;
+    margin: auto;
+  }
+  #operation,
+  #restaurant,
+  #restaurant > div {
+    padding: 1rem 0;
+  }
+  #operation {
+    margin-bottom: 2rem;
   }
 }
