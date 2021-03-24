@@ -22,7 +22,7 @@
     font-weight: 600;
   }
   p {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     font-weight: 300;
   }
 }
@@ -112,6 +112,30 @@
       padding-right: 1rem;
       text-align: center;
       font-size: 1.5rem;
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  #operation ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  li {
+    flex-basis: 30%;
+    padding-right: 1rem;
+  }
+
+  #restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h2 {
+      flex-basis: 100%;
+    }
+    article {
+      flex-basis: 45%;
     }
   }
 }
