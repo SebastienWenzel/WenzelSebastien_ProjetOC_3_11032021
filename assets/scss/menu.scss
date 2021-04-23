@@ -52,10 +52,14 @@ main {
         background: white;
         align-items: center;
         justify-content: space-between;
-        padding: 0rem 1rem;
         border-radius: 20px;
         padding: 1rem;
         > div:first-child {
+          display: flex;
+          flex-direction: column;
+          flex-basis: 100%;
+          justify-content: space-between;
+          white-space: nowrap;
           overflow: hidden;
           h3 {
             font-weight: 500;
@@ -74,13 +78,18 @@ main {
           }
         }
         > p {
+          display: flex;
           align-self: flex-end;
-          padding-left: 1rem;
+          padding-right: 10px;
         }
         > div:last-child {
-          position: absolute;
-          right: -10px;
-          padding: 2rem 0;
+          display: none;
+        }
+        &:hover div:last-child {
+          flex-basis: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -96,8 +105,8 @@ main {
   }
 }
 @media only screen and (min-width: 992px) {
-  main > section > section > div {
-    padding: 0 4rem;
+  main > section {
+    margin: -2rem 8rem 0 8rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -115,11 +124,6 @@ main {
       }
       article {
         flex-basis: 30%;
-        a > div:last-child {
-          position: absolute;
-
-          padding: 2rem 0;
-        }
       }
     }
   }
