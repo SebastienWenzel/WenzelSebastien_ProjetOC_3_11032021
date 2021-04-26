@@ -50,11 +50,12 @@ main {
       }
       article a {
         @include box-shadow;
+        border: 0;
         background: white;
         align-items: center;
         justify-content: space-between;
         border-radius: 20px;
-        padding: 1rem 0rem 1rem 1rem;
+        padding-left: 1rem;
         > div:first-child {
           display: flex;
           flex-direction: column;
@@ -62,31 +63,40 @@ main {
           justify-content: space-between;
           white-space: nowrap;
           overflow: hidden;
+          padding: 1rem 0;
           h3 {
             font-weight: 500;
             font-size: 1.1rem;
-            padding-bottom: 10px;
+            padding-top: 4px;
+            padding-bottom: 6px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
           }
           p {
             font-size: 1rem;
+            padding-bottom: 4px;
             font-weight: 300;
             white-space: nowrap;
-            overflow: hidden;
+            overflow-x: hidden;
             text-overflow: ellipsis;
           }
         }
         > p {
           display: flex;
           align-self: flex-end;
-          padding-right: 10px;
+          padding: 0rem 1rem 1.25rem 0;
         }
         > div:last-child {
           display: none;
         }
         &:hover div:last-child {
+          padding: 1.9375rem 0.5rem;
+          color: white;
+          background: $green;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          border: 1px solid $green;
           flex-basis: 80px;
           display: flex;
           justify-content: center;
