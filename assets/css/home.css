@@ -1,0 +1,355 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* GENERAL */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2rem 0 1rem 0; }
+
+main img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.btn {
+  padding: 1rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 3px 3px 3px #dedada; }
+
+.d-flex {
+  display: flex; }
+
+.f-column {
+  flex-direction: column; }
+
+.f-row {
+  flex-direction: row; }
+
+.f-wrap {
+  flex-wrap: wrap; }
+
+footer {
+  padding: 1rem;
+  background: #353535;
+  color: white; }
+  footer h4 {
+    font-family: "Shrikhand", cursive !important;
+    font-size: 1.2rem; }
+  footer ul {
+    padding: 1rem 0; }
+    footer ul li {
+      padding: 0.3rem; }
+      footer ul li a {
+        color: white !important; }
+      footer ul li i {
+        margin-right: 0.5rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        text-align: center; }
+
+@media only screen and (min-width: 760px) {
+  footer {
+    padding: 2em 4em; } }
+
+@media screen and (min-width: 1200px) {
+  footer > ul,
+  footer > h4 {
+    max-width: 1200px;
+    margin: auto; }
+  footer {
+    padding: 1rem 0; } }
+
+header {
+  text-align: center;
+  position: relative;
+  margin: 1rem; }
+  header i {
+    position: absolute;
+    text-align: center;
+    left: 10px;
+    top: 10px; }
+
+#location {
+  padding: 1rem;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 5px 3px rgba(212, 212, 212, 0.7); }
+  #location p {
+    margin-left: 20px;
+    font-weight: 500;
+    color: #353535 !important; }
+  #location i {
+    color: #353535 !important; }
+
+#search {
+  text-align: center;
+  align-items: center;
+  padding: 2rem 0 3rem 0;
+  background: #f6f6f6; }
+  #search h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600; }
+  #search p {
+    padding: 1rem 1rem 2rem 1rem;
+    font-weight: 300; }
+
+#operation {
+  margin: 1rem; }
+  #operation ol {
+    counter-reset: li;
+    font-size: 1rem;
+    font-weight: bold; }
+    #operation ol li {
+      display: flex;
+      align-items: center;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.137);
+      background: #f6f6f6;
+      margin: 1rem 1rem;
+      padding: 1.5rem 0rem 1rem;
+      border-radius: 24px;
+      counter-increment: li; }
+      #operation ol li i {
+        text-align: center;
+        color: #b1b1b1 !important;
+        margin-right: 1rem;
+        line-height: 2rem;
+        width: 2rem; }
+    #operation ol li::before {
+      content: counter(li);
+      display: block;
+      line-height: 20px;
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      margin-right: 1rem;
+      color: white;
+      background: #9356dc;
+      border: 1px solid #9356dc;
+      border-radius: 50%;
+      margin-left: -0.8rem; }
+    #operation ol li:hover {
+      background-color: #ecdbff; }
+    #operation ol li:hover > i {
+      color: #9356dc !important; }
+
+#restaurant {
+  padding: 1rem;
+  background: #f6f6f6; }
+  #restaurant article {
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.137);
+    position: relative;
+    border-radius: 15px;
+    margin: 2rem 0;
+    background: white; }
+    #restaurant article > a figure {
+      flex-basis: 100%;
+      width: 100%; }
+      #restaurant article > a figure img {
+        width: 100%;
+        max-height: 225px;
+        max-width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px; }
+    #restaurant article > a p {
+      position: absolute;
+      text-align: center;
+      right: 20px;
+      top: 20px;
+      background: #99e2d0;
+      padding: 10px 15px;
+      color: #058a6a;
+      font-weight: 600; }
+    #restaurant article div {
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem; }
+      #restaurant article div h3 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        padding-bottom: 0.4rem; }
+      #restaurant article div p {
+        font-weight: 300; }
+    #restaurant article i {
+      padding-right: 1rem;
+      text-align: center;
+      font-size: 1.5rem; }
+
+@media only screen and (min-width: 760px) {
+  #operation,
+  #restaurant > div {
+    padding: 2em 4em; }
+  #restaurant {
+    padding: 0; } }
+
+@media only screen and (min-width: 992px) {
+  #operation ol {
+    margin: 0 5rem; }
+  #restaurant > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    #restaurant > div h2 {
+      flex-basis: 100%; }
+    #restaurant > div article {
+      flex-basis: 49%;
+      margin-bottom: 6px; } }
+
+@media screen and (min-width: 1200px) {
+  #operation ol {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  li {
+    flex-basis: 30%;
+    padding-right: 1rem; }
+  #operation,
+  #restaurant > div {
+    max-width: 1200px;
+    margin: auto; }
+  #operation,
+  #restaurant,
+  #restaurant > div {
+    padding: 1rem 0; }
+  #operation {
+    margin-bottom: 2rem; } }
+
