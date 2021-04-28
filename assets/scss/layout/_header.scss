@@ -2,4 +2,10 @@ header {
   text-align: center;
   position: relative;
   margin: 1rem;
+  i {
+    position: absolute;
+    text-align: center;
+    left: 10px;
+    top: 10px;
+  }
 }
