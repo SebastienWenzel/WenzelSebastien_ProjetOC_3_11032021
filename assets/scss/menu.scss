@@ -15,26 +15,24 @@ main {
   > section {
     position: relative;
     background: $ligthgrey;
-    padding: 1rem 0;
+    padding: 2rem 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-top: -2rem; /* un peu plus*/
+    margin-top: -2rem;
     > div {
-      padding: 1rem 2rem 0 1rem;
+      margin: 0 5%;
       justify-content: space-between;
       align-items: center;
       font-size: 1.5rem;
       h1 {
-        margin: 1rem 0;
         font-family: "Shrikhand", cursive !important;
         font-size: 32px;
       }
     }
     > section {
-      padding: 1rem 0;
+      margin: 1rem 0;
 
       h2 {
-        flex-basis: 100%;
         font-weight: 300;
         margin-left: 1rem;
       }
@@ -47,60 +45,43 @@ main {
       }
       article {
         margin: 1rem 1rem;
-      }
-      article a {
-        @include box-shadow;
-        border: 0;
-        background: white;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 20px;
-        padding-left: 1rem;
-        > div:first-child {
-          display: flex;
-          flex-direction: column;
-          flex-basis: 100%;
+
+        > a {
+          @include box-shadow;
+          background: white;
+          align-items: center;
           justify-content: space-between;
-          white-space: nowrap;
-          overflow: hidden;
-          padding: 1rem 0;
-          h3 {
-            font-weight: 500;
-            font-size: 1.1rem;
-            padding-top: 4px;
-            padding-bottom: 6px;
+          border-radius: 20px;
+          border: 0;
+          padding-left: 1rem;
+
+          > div:first-child {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            justify-content: space-around;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis;
+            padding: 1rem 0;
+
+            h3,
+            p {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              padding: 2px 0; //letter "g" cut
+            }
           }
-          p {
-            font-size: 1rem;
-            padding-bottom: 4px;
-            font-weight: 300;
-            white-space: nowrap;
-            overflow-x: hidden;
-            text-overflow: ellipsis;
+          > p {
+            display: flex;
+            align-self: flex-end;
+            padding: 0rem 1rem 1.25rem 0;
+            font-weight: bold;
+            color: $semi-dark;
           }
-        }
-        > p {
-          display: flex;
-          align-self: flex-end;
-          padding: 0rem 1rem 1.25rem 0;
-        }
-        > div:last-child {
-          display: none;
-        }
-        &:hover div:last-child {
-          padding: 1.9375rem 0.5rem;
-          color: white;
-          background: $green;
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
-          border: 1px solid $green;
-          flex-basis: 80px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          > div:last-child {
+            display: none;
+          }
         }
       }
     }
@@ -109,7 +90,9 @@ main {
     }
   }
 }
+
 // menu responsive
+
 @media only screen and (min-width: 760px) {
   main > section {
     margin: -2rem 4rem 0 4rem;

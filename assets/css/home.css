@@ -142,6 +142,13 @@ main img {
   max-width: 100%;
   height: auto; }
 
+h3 {
+  font-weight: bold;
+  font-size: 1.2rem; }
+
+p {
+  font-weight: 300; }
+
 .btn {
   padding: 1rem;
   border-radius: 2rem;
@@ -211,7 +218,7 @@ header {
   box-shadow: inset 0px 5px 3px rgba(212, 212, 212, 0.7); }
   #location p {
     margin-left: 20px;
-    font-weight: 500;
+    font-weight: 500 !important;
     color: #353535 !important; }
   #location i {
     color: #353535 !important; }
@@ -305,8 +312,6 @@ header {
         font-weight: 600;
         font-size: 1.2rem;
         padding-bottom: 0.4rem; }
-      #restaurant article div p {
-        font-weight: 300; }
     #restaurant article i {
       padding-right: 1rem;
       text-align: center;
