@@ -73,9 +73,11 @@
 
     li:hover {
       background-color: $purplelight;
+      transition-duration: 500ms;
     }
     li:hover > i {
       color: $purple !important;
+      transition-duration: 500ms;
     }
   }
 }

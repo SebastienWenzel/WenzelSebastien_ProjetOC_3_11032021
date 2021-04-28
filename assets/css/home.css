@@ -271,9 +271,11 @@ header {
       border-radius: 50%;
       margin-left: -0.8rem; }
     #operation ol li:hover {
-      background-color: #ecdbff; }
+      background-color: #ecdbff;
+      transition-duration: 500ms; }
     #operation ol li:hover > i {
-      color: #9356dc !important; }
+      color: #9356dc !important;
+      transition-duration: 500ms; }
 
 #restaurant {
   padding: 1rem;
