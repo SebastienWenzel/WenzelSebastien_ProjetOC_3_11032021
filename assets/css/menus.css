@@ -268,8 +268,9 @@ path {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  -webkit-animation: loader 2s ease-out both;
-          animation: loader 2s ease-out both; }
+  background: #ffffff;
+  -webkit-animation: loader 3s ease-in both;
+          animation: loader 3s ease-in both; }
   #preloader #loader {
     display: block;
     position: relative;
@@ -282,8 +283,8 @@ path {
     border: 3px solid transparent;
     border-top-color: #9356dc;
     border-bottom-color: #9356dc;
-    -webkit-animation: spin 2s linear both;
-            animation: spin 2s linear both; }
+    -webkit-animation: spin 3s linear both;
+            animation: spin 3s linear both; }
     #preloader #loader:before {
       content: "";
       position: absolute;
@@ -295,8 +296,8 @@ path {
       border: 3px solid transparent;
       border-left-color: #ff79da;
       border-right-color: #ff79da;
-      -webkit-animation: spin 2s linear both;
-              animation: spin 2s linear both; }
+      -webkit-animation: spin 3s linear both;
+              animation: spin 3s linear both; }
     #preloader #loader:after {
       content: "";
       position: absolute;
@@ -325,10 +326,8 @@ path {
 
 @-webkit-keyframes loader {
   0% {
-    background: white;
     opacity: 1; }
   50% {
-    background: white;
     opacity: 1; }
   100% {
     opacity: 0;
@@ -337,10 +336,8 @@ path {
 
 @keyframes loader {
   0% {
-    background: white;
     opacity: 1; }
   50% {
-    background: white;
     opacity: 1; }
   100% {
     opacity: 0;

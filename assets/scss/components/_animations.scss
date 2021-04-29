@@ -90,7 +90,8 @@ path {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  animation: loader 2s ease-out both;
+  background: #ffffff;
+  animation: loader 3s ease-in both;
   #loader {
     display: block;
     position: relative;
@@ -103,7 +104,7 @@ path {
     border: 3px solid transparent;
     border-top-color: $purple;
     border-bottom-color: $purple;
-    animation: spin 2s linear both;
+    animation: spin 3s linear both;
     &:before {
       content: "";
       position: absolute;
@@ -115,7 +116,7 @@ path {
       border: 3px solid transparent;
       border-left-color: $pink;
       border-right-color: $pink;
-      animation: spin 2s linear both;
+      animation: spin 3s linear both;
     }
     &:after {
       content: "";
@@ -143,11 +144,9 @@ path {
 }
 @keyframes loader {
   0% {
-    background: rgb(255, 255, 255);
     opacity: 1;
   }
   50% {
-    background: rgb(255, 255, 255);
     opacity: 1;
   }
   100% {
