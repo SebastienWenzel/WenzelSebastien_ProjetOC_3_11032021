@@ -268,7 +268,6 @@ path {
   width: 100vw;
   height: 100vh;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.9);
   -webkit-animation: loader 2s ease-out both;
           animation: loader 2s ease-out both; }
   #preloader #loader {
@@ -326,20 +325,26 @@ path {
 
 @-webkit-keyframes loader {
   0% {
+    background: white;
     opacity: 1; }
   50% {
+    background: white;
     opacity: 1; }
   100% {
     opacity: 0;
+    background: transparent;
     visibility: hidden; } }
 
 @keyframes loader {
   0% {
+    background: white;
     opacity: 1; }
   50% {
+    background: white;
     opacity: 1; }
   100% {
     opacity: 0;
+    background: transparent;
     visibility: hidden; } }
 
 .d-flex {
