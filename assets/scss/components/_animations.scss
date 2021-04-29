@@ -53,6 +53,7 @@ path {
     fill: transparent;
   }
   100% {
+    transform: scale(0);
     stroke-dashoffset: 3100;
     stroke: $purple;
     fill: $purple;

@@ -159,11 +159,11 @@ p {
   box-shadow: 3px 3px 3px #dedada; }
 
 .icon {
+  cursor: pointer;
+  position: relative;
   fill: transparent;
   stroke: #353535;
-  stroke-width: 30;
-  cursor: pointer;
-  position: relative; }
+  stroke-width: 30; }
   .icon:hover .heart-first path {
     -webkit-animation: stroke 2s ease-in forwards;
             animation: stroke 2s ease-in forwards; }
@@ -204,6 +204,7 @@ path {
     transform: scale(1);
     fill: transparent; }
   100% {
+    transform: scale(0);
     stroke-dashoffset: 3100;
     stroke: #9356dc;
     fill: #9356dc; } }
@@ -225,6 +226,7 @@ path {
     transform: scale(1);
     fill: transparent; }
   100% {
+    transform: scale(0);
     stroke-dashoffset: 3100;
     stroke: #9356dc;
     fill: #9356dc; } }
