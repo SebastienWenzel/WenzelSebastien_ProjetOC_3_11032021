@@ -146,8 +146,14 @@ path {
   0% {
     opacity: 1;
   }
-  50% {
+  25% {
     opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.3;
   }
   100% {
     opacity: 0;
