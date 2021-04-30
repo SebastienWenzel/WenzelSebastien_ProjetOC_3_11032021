@@ -350,6 +350,36 @@ path {
     opacity: 0;
     visibility: hidden; } }
 
+@-webkit-keyframes lazy-menu {
+  0% {
+    opacity: 0; }
+  25% {
+    transform: translateY(10px);
+    opacity: 0; }
+  50% {
+    transform: translateY(10px);
+    opacity: 0; }
+  75% {
+    opacity: 0.5; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes lazy-menu {
+  0% {
+    opacity: 0; }
+  25% {
+    transform: translateY(10px);
+    opacity: 0; }
+  50% {
+    transform: translateY(10px);
+    opacity: 0; }
+  75% {
+    opacity: 0.5; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 .d-flex {
   display: flex; }
 
@@ -473,6 +503,33 @@ main {
             color: #353535; }
           main > section > section article > a > div:last-child {
             display: none; }
+      main > section > section div:nth-of-type(1) article:nth-of-type(1) {
+        -webkit-animation: lazy-menu 1s ease-out 0.3s both;
+                animation: lazy-menu 1s ease-out 0.3s both; }
+      main > section > section div:nth-of-type(1) article:nth-of-type(2) {
+        -webkit-animation: lazy-menu 1s ease-out 0.6s both;
+                animation: lazy-menu 1s ease-out 0.6s both; }
+      main > section > section div:nth-of-type(1) article:nth-of-type(3) {
+        -webkit-animation: lazy-menu 1s ease-out 0.9s both;
+                animation: lazy-menu 1s ease-out 0.9s both; }
+      main > section > section div:nth-of-type(2) article:nth-of-type(1) {
+        -webkit-animation: lazy-menu 1s ease-out 1.2s both;
+                animation: lazy-menu 1s ease-out 1.2s both; }
+      main > section > section div:nth-of-type(2) article:nth-of-type(2) {
+        -webkit-animation: lazy-menu 1s ease-out 1.5s both;
+                animation: lazy-menu 1s ease-out 1.5s both; }
+      main > section > section div:nth-of-type(2) article:nth-of-type(3) {
+        -webkit-animation: lazy-menu 1s ease-out 1.8s both;
+                animation: lazy-menu 1s ease-out 1.8s both; }
+      main > section > section div:nth-of-type(3) article:nth-of-type(1) {
+        -webkit-animation: lazy-menu 1s ease-out 2.1s both;
+                animation: lazy-menu 1s ease-out 2.1s both; }
+      main > section > section div:nth-of-type(3) article:nth-of-type(2) {
+        -webkit-animation: lazy-menu 1s ease-out 2.4s both;
+                animation: lazy-menu 1s ease-out 2.4s both; }
+      main > section > section div:nth-of-type(3) article:nth-of-type(3) {
+        -webkit-animation: lazy-menu 1s ease-out 2.7s both;
+                animation: lazy-menu 1s ease-out 2.7s both; }
     main > section a {
       align-self: center; }
 

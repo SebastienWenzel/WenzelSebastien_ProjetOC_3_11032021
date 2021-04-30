@@ -80,9 +80,6 @@ path {
     opacity: 1;
   }
 }
-
-//loading page
-
 #preloader {
   position: fixed;
   top: 0;
@@ -159,5 +156,28 @@ path {
     opacity: 0;
 
     visibility: hidden;
+  }
+}
+
+//Lazy loading menu
+
+@keyframes lazy-menu {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
