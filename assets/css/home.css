@@ -330,12 +330,11 @@ path {
   25% {
     opacity: 1; }
   50% {
-    opacity: 0.6; }
+    opacity: 1; }
   75% {
-    opacity: 0.3; }
+    opacity: 0.6; }
   100% {
     opacity: 0;
-    background: transparent;
     visibility: hidden; } }
 
 @keyframes loader {
@@ -344,12 +343,11 @@ path {
   25% {
     opacity: 1; }
   50% {
-    opacity: 0.6; }
+    opacity: 1; }
   75% {
-    opacity: 0.3; }
+    opacity: 0.6; }
   100% {
     opacity: 0;
-    background: transparent;
     visibility: hidden; } }
 
 .d-flex {
