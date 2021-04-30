@@ -159,8 +159,9 @@ p {
   box-shadow: 3px 3px 3px #dedada; }
 
 .btn:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  opacity: 0.8; }
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.22);
+  opacity: 0.9;
+  transition: 400ms; }
 
 .icon {
   cursor: pointer;
