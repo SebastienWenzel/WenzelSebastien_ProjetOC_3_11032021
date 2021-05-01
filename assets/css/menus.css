@@ -476,8 +476,8 @@ main {
       height: 250px;
       -o-object-fit: cover;
          object-fit: cover;
-      -o-object-position: 50% 65%;
-         object-position: 50% 65%; }
+      -o-object-position: 50% 60%;
+         object-position: 50% 60%; }
   main > section {
     position: relative;
     background: #f6f6f6;
