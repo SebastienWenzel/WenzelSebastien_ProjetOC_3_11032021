@@ -76,7 +76,7 @@ main {
           > p {
             display: flex;
             align-self: flex-end;
-            padding: 0rem 2rem 1.25rem 1rem;
+            padding: 0rem 1.5rem 1.25rem 0.5rem;
             font-weight: bold;
             color: $semi-dark;
           }
@@ -88,18 +88,18 @@ main {
             margin-right: -3.5rem;
             transition: 1s ease;
             > i {
-              font-size: 1.5rem;
               color: #fff;
+              font-size: 1.5rem;
             }
           }
         }
         a:hover div:last-child {
           overflow: none;
           margin-right: 0rem;
-          transition: 1s ease;
+          transition: 0.5s ease;
         }
         a:hover div:last-child > i {
-          animation: check-box ease 0.4s;
+          animation: check-box ease-in 0.4s;
         }
       }
       div:nth-of-type(1) {
