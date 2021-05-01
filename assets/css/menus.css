@@ -514,15 +514,15 @@ main {
           border-radius: 20px;
           border: 0;
           padding-left: 1rem;
-          overflow: hidden; }
+          overflow: hidden;
+          height: 70px; }
           main > section > section article > a > div:first-child {
             display: flex;
             flex-direction: column;
-            flex-basis: 100%;
             justify-content: space-around;
+            flex-basis: 80%;
             white-space: nowrap;
-            overflow: hidden;
-            padding: 1rem 0; }
+            overflow: hidden; }
             main > section > section article > a > div:first-child h3,
             main > section > section article > a > div:first-child p {
               white-space: nowrap;
@@ -532,17 +532,19 @@ main {
           main > section > section article > a > p {
             display: flex;
             align-self: flex-end;
-            padding: 0rem 1rem 1.25rem 0.5rem;
             font-weight: bold;
-            color: #353535; }
+            color: #353535;
+            padding-bottom: 1rem; }
           main > section > section article > a > div:last-child {
-            padding: 1.9rem 1rem;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             background: #99e2d0;
-            margin-right: -3.5rem;
-            transition: 1s ease; }
+            margin-right: -4.5rem;
+            transition: 1s ease;
+            width: 70px;
+            text-align: center; }
             main > section > section article > a > div:last-child > i {
+              line-height: 70px;
               color: #fff;
               font-size: 1.5rem; }
         main > section > section article a:hover div:last-child {
@@ -550,8 +552,8 @@ main {
           margin-right: 0rem;
           transition: 0.5s ease; }
         main > section > section article a:hover div:last-child > i {
-          -webkit-animation: check-box ease-in 0.4s;
-                  animation: check-box ease-in 0.4s; }
+          -webkit-animation: check-box ease 0.4s;
+                  animation: check-box ease 0.4s; }
       main > section > section div:nth-of-type(1) article:nth-of-type(1) {
         -webkit-animation: lazy-menu 1s ease-out 0.3s both;
                 animation: lazy-menu 1s ease-out 0.3s both; }
@@ -603,5 +605,6 @@ main {
       main > section > section > div h2 {
         flex-basis: 100%; }
       main > section > section > div article {
-        flex-basis: 30%; } }
+        flex-basis: 30%;
+        max-width: 30%; } }
 
