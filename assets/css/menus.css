@@ -534,7 +534,7 @@ main {
             align-self: flex-end;
             font-weight: bold;
             color: #353535;
-            padding-bottom: 1rem; }
+            padding: 0 0.5rem 1rem 0.5rem; }
           main > section > section article > a > div:last-child {
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;

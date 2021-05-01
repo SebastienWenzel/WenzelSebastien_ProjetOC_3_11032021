@@ -78,7 +78,7 @@ main {
             align-self: flex-end;
             font-weight: bold;
             color: $semi-dark;
-            padding-bottom: 1rem;
+            padding: 0 0.5rem 1rem 0.5rem;
           }
           > div:last-child {
             border-top-right-radius: 20px;
