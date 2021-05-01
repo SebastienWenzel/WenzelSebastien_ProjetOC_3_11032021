@@ -532,7 +532,7 @@ main {
           main > section > section article > a > p {
             display: flex;
             align-self: flex-end;
-            padding: 0rem 1.5rem 1.25rem 0.5rem;
+            padding: 0rem 1rem 1.25rem 0.5rem;
             font-weight: bold;
             color: #353535; }
           main > section > section article > a > div:last-child {
