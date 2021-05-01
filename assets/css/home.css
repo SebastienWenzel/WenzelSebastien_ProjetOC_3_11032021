@@ -385,6 +385,34 @@ path {
     transform: translateY(0);
     opacity: 1; } }
 
+@-webkit-keyframes check-box {
+  10% {
+    transform: rotate(90deg); }
+  20% {
+    transform: rotate(150deg); }
+  40% {
+    transform: rotate(210deg); }
+  60% {
+    transform: rotate(270deg); }
+  80% {
+    transform: rotate(330deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes check-box {
+  10% {
+    transform: rotate(90deg); }
+  20% {
+    transform: rotate(150deg); }
+  40% {
+    transform: rotate(210deg); }
+  60% {
+    transform: rotate(270deg); }
+  80% {
+    transform: rotate(330deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 .d-flex {
   display: flex; }
 
