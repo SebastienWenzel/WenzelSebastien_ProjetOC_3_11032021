@@ -54,15 +54,16 @@ main {
           border-radius: 20px;
           border: 0;
           padding-left: 1rem;
+          overflow: hidden;
+          height: 70px;
 
           > div:first-child {
             display: flex;
             flex-direction: column;
-            flex-basis: 100%;
             justify-content: space-around;
+            flex-basis: 80%;
             white-space: nowrap;
             overflow: hidden;
-            padding: 1rem 0;
 
             h3,
             p {
@@ -75,13 +76,32 @@ main {
           > p {
             display: flex;
             align-self: flex-end;
-            padding: 0rem 1rem 1.25rem 0;
             font-weight: bold;
             color: $semi-dark;
+            padding: 0 0.5rem 1rem 0.5rem;
           }
           > div:last-child {
-            display: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: $green;
+            margin-right: -4.5rem;
+            transition: 1s ease;
+            width: 70px;
+            text-align: center;
+            > i {
+              line-height: 70px;
+              color: #fff;
+              font-size: 1.5rem;
+            }
           }
+        }
+        a:hover div:last-child {
+          overflow: none;
+          margin-right: 0rem;
+          transition: 0.5s ease;
+        }
+        a:hover div:last-child > i {
+          animation: check-box ease 0.4s;
         }
       }
       div:nth-of-type(1) {
@@ -154,6 +174,7 @@ main {
       }
       article {
         flex-basis: 30%;
+        max-width: 30%;
       }
     }
   }
