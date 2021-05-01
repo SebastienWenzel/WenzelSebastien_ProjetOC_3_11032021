@@ -385,6 +385,34 @@ path {
     transform: translateY(0);
     opacity: 1; } }
 
+@-webkit-keyframes check-box {
+  10% {
+    transform: rotate(-90deg); }
+  20% {
+    transform: rotate(-75deg) scale(1.03); }
+  40% {
+    transform: rotate(-60deg) scale(1.08); }
+  60% {
+    transform: rotate(-45deg) scale(1.15); }
+  80% {
+    transform: rotate(-30deg) scale(1.08); }
+  100% {
+    transform: rotate(5deg) scale(1); } }
+
+@keyframes check-box {
+  10% {
+    transform: rotate(-90deg); }
+  20% {
+    transform: rotate(-75deg) scale(1.03); }
+  40% {
+    transform: rotate(-60deg) scale(1.08); }
+  60% {
+    transform: rotate(-45deg) scale(1.15); }
+  80% {
+    transform: rotate(-30deg) scale(1.08); }
+  100% {
+    transform: rotate(5deg) scale(1); } }
+
 .d-flex {
   display: flex; }
 
