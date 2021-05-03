@@ -603,8 +603,7 @@ main {
       padding: 0;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around; }
+      flex-wrap: wrap; }
       main > section > section > div h2 {
         flex-basis: 100%; }
       main > section > section > div article {
